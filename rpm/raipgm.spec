@@ -12,6 +12,7 @@ Prefix:	        /usr
 BuildRequires:  gcc-c++
 BuildRequires:  chrpath
 BuildRequires:  openpgm-devel
+BuildRequires:  git-core
 Requires:       openpgm
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
