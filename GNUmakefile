@@ -94,7 +94,7 @@ libraipgm_dbjs  := $(addprefix $(objd)/, $(addsuffix .fpic.o, $(libraipgm_files)
 libraipgm_deps  := $(addprefix $(dependd)/, $(addsuffix .d, $(libraipgm_files))) \
                   $(addprefix $(dependd)/, $(addsuffix .fpic.d, $(libraipgm_files)))
 libraipgm_dlnk  := $(dlnk_lib)
-libraipgm_spec  := $(version)-$(build_num)
+libraipgm_spec  := $(version)-$(build_num)_$(git_hash)
 libraipgm_ver   := $(major_num).$(minor_num)
 
 $(libd)/libraipgm.a: $(libraipgm_objs)
